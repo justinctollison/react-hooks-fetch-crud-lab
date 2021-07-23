@@ -4,7 +4,7 @@ import QuestionItem from "./QuestionItem";
 function QuestionList( {question, handleDelete, handlePatch} ) {
 
   const questions = question.map((quest) => 
-  <QuestionItem question={quest} id={quest.id} handleDelete={handleDelete} handlePatch={handlePatch} />)
+  <QuestionItem question={quest} key={quest.id} handleDelete={handleDelete} handlePatch={handlePatch} />)
 
   return (
     <section>
